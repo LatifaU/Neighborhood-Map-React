@@ -14,6 +14,8 @@ class Sidebar extends Component {
 
     componentDidMount() {
         this.setState({markers: this.props.virtualMarker});
+        const sideBar = document.querySelector('.sideBar');
+        sideBar.style.display = 'none';
     }
 
     search = (event) => {
@@ -36,12 +38,22 @@ class Sidebar extends Component {
         this.setState({markers: newMarkers});
     }
 
+    sideBarDisplayment = () => {
+        const sideBar = document.querySelector('.sideBar');
+        if (sideBar.style.display === 'none') {
+         sideBar.style.display = 'block';
+        }
+        else {
+            sideBar.style.display = 'none';
+        }
+    }
+
     // HTML part
     render() {
 
         return (
             <div>
-                <div className="sideBarLines">
+                <div className="sideBarLines" onClick={this.sideBarDisplayment}>
                     <div></div>
                     <div></div>
                     <div></div>

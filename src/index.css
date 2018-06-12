@@ -90,7 +90,7 @@ header .sideBar ul li a {
 
 @media screen and (max-width: 400px) {
   header h1 {
-    font-size: 2.5rem; 
+    font-size: 2rem; 
   } 
   header .sideBar {
   width: 120px;

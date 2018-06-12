@@ -6,7 +6,7 @@ To get started developing right away:
 
 ## Important
 * Used Google Maps API and Foursquare API
-* Implemented 12 bakeries only and search will be within these 7 bakeries.
+* Implemented 12 bakeries only and search will be within these 12 bakeries.
 
 ## Udacity Resources:
 * Project Overview 
